@@ -4,8 +4,9 @@
   "description": "backend for readnswap",
   "main": "src/app.ts",
   "scripts": {
-    "start": "nodemon",
-    "build": "tsc",
+    "start": "node src/app.ts",
+    "build": "npm install --force",
+    "install": "npm install --force",
     "prepare": "husky",
     "pretty-quick": "pretty-quick"
   },
