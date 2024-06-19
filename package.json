@@ -2,23 +2,18 @@
   "name": "read-n-swap-backend",
   "version": "1.0.0",
   "description": "backend for readnswap",
-  "main": "src/app.ts",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.ts",
-    "build": "tsc",
     "prepare": "husky",
-    "pretty-quick": "pretty-quick"
+    "pretty-quick": "pretty-quick",
+    "start": "node src/app.js"
   },
-  "author": "yogesh,vipanchi",
+  "author": "readnswap team",
   "license": "ISC",
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "globals": "^15.6.0",
     "husky": "^9.0.11",
     "prettier": "^3.3.2",
-    "pretty-quick": "^4.0.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "pretty-quick": "^4.0.0"
   },
   "dependencies": {
     "dotenv": "^16.4.5",

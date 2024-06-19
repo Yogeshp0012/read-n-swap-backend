@@ -1,10 +1,10 @@
-import express, { Application } from 'express';
-import dotenv from 'dotenv';
+const express = require('express');
+const dotenv = require('dotenv');
 dotenv.config();
-import { LoopsClient } from "loops";
-import newsletter from './newsletters/newsletter';
+const { LoopsClient } = require("loops");
+const newsletter = require('./newsletters/newsletter');
 
-const app: Application = express();
+const app = express();
 const port = 3000;
 
 const loops = new LoopsClient(process.env.LOOPS_KEY ?? "");
